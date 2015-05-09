@@ -188,10 +188,16 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#empiezaCon(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testEmpiezaCon() {
-		fail("Not yet implemented");
+		String c="empezar con";
+		String empieza="e";
+		String noEmpieza="a";
+		
+		assertEquals(cad.empiezaCon(c,empieza),c.startsWith(empieza));
+		assertTrue(cad.empiezaCon(c,empieza) && c.startsWith(empieza));
+		assertFalse(cad.empiezaCon(c, noEmpieza));
 	}
 
 	/**
