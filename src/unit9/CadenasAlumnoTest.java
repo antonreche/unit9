@@ -124,10 +124,14 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#reemplazaTodos(java.lang.String, java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testReemplazaTodos() {
-		fail("Not yet implemented");
+		String c1="Asignatura entornos de programación";
+		String regla="a";
+		String cambio="---";
+		
+		assertEquals(cad.reemplazaTodos(c1, regla, cambio),c1.replaceAll(regla, cambio));
 	}
 
 	/**
