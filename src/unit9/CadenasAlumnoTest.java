@@ -178,10 +178,12 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#longitudCadena(java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testLongitudCadena() {
-		fail("Not yet implemented");
+		String c="longitud cadena";
+		
+		assertEquals(cad.longitudCadena(c),c.length());
 	}
 
 	/**
