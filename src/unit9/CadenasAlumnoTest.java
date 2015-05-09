@@ -216,10 +216,15 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#posicionPrimeraCadena(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testPosicionPrimeraCadena() {
-		fail("Not yet implemented");
+		String c="Posición primera cadena";
+		String primera="pri";
+		String noEsta="to";
+		
+		assertEquals(cad.posicionPrimeraCadena(c,primera), c.indexOf(primera));
+		assertEquals(cad.posicionPrimeraCadena(c, noEsta),c.indexOf(noEsta));
 	}
 
 	/**
