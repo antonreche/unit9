@@ -136,10 +136,14 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#reemplazaPrimero(java.lang.String, java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testReemplazaPrimero() {
-		fail("Not yet implemented");
+		String c1="Asignatura entornos de programación";
+		String regla="a";
+		String cambio="---";
+				
+		assertEquals(cad.reemplazaPrimero(c1, regla, cambio),c1.replaceFirst(regla, cambio));
 	}
 
 	/**
