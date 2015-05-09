@@ -229,34 +229,24 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#extraerSubstring(java.lang.String, int)}.
-	 *
+	 */
 	@Test
-	public void testExtraerSubstringStringInt() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link unit9.CadenasAlumno#extraerSubstring(java.lang.String, int, int)}.
-	 *
-	@Test
-	public void testExtraerSubstringStringIntInt() {
-		fail("Not yet implemented");
-	}
+	public void testExtraerSubstring() {
+		String c="Extraer cadena";
+		int x=3;
+		int y=5;
+		
+		assertEquals(cad.extraerSubstring(c, x),c.substring(x));
+		assertEquals(cad.extraerSubstring(c, y),c.substring(y));
+		assertEquals(cad.extraerSubstring(c, x, y),c.substring(x,y));
+	}	
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#concatenaCadenas(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testConcatenaCadenas() {
 		fail("Not yet implemented");
-	}
+	}	
 
-	/**
-	 * Test method for {@link unit9.CadenasAlumno#main(java.lang.String[])}.
-	 *
-	@Test
-	public void testMain() {
-		fail("Not yet implemented");
-	}
-*/
 }
