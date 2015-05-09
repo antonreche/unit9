@@ -168,10 +168,12 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#convertirMinusculas(java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testConvertirMinusculas() {
-		fail("Not yet implemented");
+		String c="TODO a MINUSculas";
+		
+		assertEquals(cad.convertirMinusculas(c),c.toLowerCase());
 	}
 
 	/**
