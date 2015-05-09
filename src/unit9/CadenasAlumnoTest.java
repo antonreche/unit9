@@ -202,10 +202,16 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#acabaEn(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testAcabaEn() {
-		fail("Not yet implemented");
+		String c="Acaba en";
+		String acaba="n";
+		String noAcaba="a";
+		
+		assertEquals(cad.acabaEn(c, acaba),c.endsWith(acaba));
+		assertTrue(cad.acabaEn(c, acaba) && c.endsWith(acaba));
+		assertFalse(cad.acabaEn(c, noAcaba));
 	}
 
 	/**
