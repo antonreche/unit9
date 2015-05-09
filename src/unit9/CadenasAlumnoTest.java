@@ -158,10 +158,12 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#convertirMayusculas(java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testConvertirMayusculas() {
-		fail("Not yet implemented");
+		String c="Todo a mayusculas";
+		
+		assertEquals(cad.convertirMayusculas(c),c.toUpperCase());
 	}
 
 	/**
