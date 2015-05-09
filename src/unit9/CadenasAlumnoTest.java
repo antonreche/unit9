@@ -106,10 +106,20 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#comparaIgnorandoMayusculas(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testComparaIgnorandoMayusculas() {
-		fail("Not yet implemented");
+		String c1="AlBa";
+		String c2="alba";
+		String c3="cuen";
+		boolean iguales=false;
+		
+		if(c1.equalsIgnoreCase(c2))
+			iguales=true;
+		
+		assertTrue(cad.comparaIgnorandoMayusculas(c1, c2));
+		assertFalse(cad.comparaIgnorandoMayusculas(c1,c3));
+		assertEquals(cad.comparaIgnorandoMayusculas(c1,c2),c1.equalsIgnoreCase(c2));
 	}
 
 	/**
