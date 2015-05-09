@@ -69,14 +69,11 @@ public class CadenasAlumnoTest {
 		String cad1="entornos";
 		String cad2="entornos";
 		String cad3="antornos";
-		boolean iguales1_2=false;
-		boolean iguales1_3=false;
+		boolean iguales1_2=false;		
 		boolean mayor=false;
 		
 		if(cad1.compareTo(cad2)==0)
-			iguales1_2=true;
-		if(cad1.compareTo(cad3)==0)
-			iguales1_3=true;
+			iguales1_2=true;		
 		if(cad3.compareTo(cad1)<0)
 			mayor=true;
 		
@@ -88,10 +85,23 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#esMenor(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testEsMenor() {
-		fail("Not yet implemented");
+		String c1="alba";
+		String c2="alba";
+		String c3="cuen";
+		boolean iguales1_2=false;		
+		boolean menor=false;
+		
+		if(c1.compareTo(c2)==0)
+			iguales1_2=true;		
+		if(c3.compareTo(c1)>0)
+			menor=true;
+		
+		assertTrue(cad.esMenor(c3, c1) && menor);
+		assertEquals(cad.esMenor(c1, c2),iguales1_2);
+		assertFalse(cad.esMenor(c1,c3));
 	}
 
 	/**

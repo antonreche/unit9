@@ -74,7 +74,7 @@ public class CadenasAlumno {
 			esMenor=true;
 		else{
 			for(int i=0;i<cadena1.length();i++){
-				if(cadena1.charAt(i)<cadena2.charAt(i)){
+				if(cadena1.charAt(i)>cadena2.charAt(i)){
 					esMenor=true;
 					break;
 				}				
