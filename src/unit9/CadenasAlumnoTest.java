@@ -246,7 +246,11 @@ public class CadenasAlumnoTest {
 	 */
 	@Test
 	public void testConcatenaCadenas() {
-		fail("Not yet implemented");
+		String c1="Primera cadena, ";
+		String c2="segunda cadena";
+		
+		assertEquals(cad.concatenaCadenas(c1, c2),c1.concat(c2));
+		assertEquals(cad.concatenaCadenas(c2, c1),c2.concat(c1));
 	}	
 
 }
