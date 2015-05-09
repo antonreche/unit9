@@ -10,10 +10,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import junit.framework.TestCase;
 
-import junit.framework.*;
 /**
+ * Clase CadenasAlumnoTest, clase para realizar los test de la clase CadenasAlumno
  * @author Antonio Reche Ramal
  */
 public class CadenasAlumnoTest {
@@ -64,10 +63,27 @@ public class CadenasAlumnoTest {
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#esMayor(java.lang.String, java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testEsMayor() {
-		fail("Not yet implemented");
+		String cad1="entornos";
+		String cad2="entornos";
+		String cad3="antornos";
+		boolean iguales1_2=false;
+		boolean iguales1_3=false;
+		boolean mayor=false;
+		
+		if(cad1.compareTo(cad2)==0)
+			iguales1_2=true;
+		if(cad1.compareTo(cad3)==0)
+			iguales1_3=true;
+		if(cad3.compareTo(cad1)<0)
+			mayor=true;
+		
+		assertTrue(cad.esMayor(cad3, cad1) && mayor);
+		assertEquals(cad.esMayor(cad1, cad2),iguales1_2);
+		assertFalse(cad.esMayor(cad1,cad3));
+		
 	}
 
 	/**
