@@ -144,30 +144,16 @@ public class CadenasAlumnoTest {
 		String cambio="---";
 				
 		assertEquals(cad.reemplazaPrimero(c1, regla, cambio),c1.replaceFirst(regla, cambio));
-	}
-
-	/**
-	 * Test method for {@link unit9.CadenasAlumno#muestraSplitLimite(java.lang.String, java.lang.String, int)}.
-	 *
-	@Test
-	public void testMuestraSplitLimite() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link unit9.CadenasAlumno#muestraSplit(java.lang.String, java.lang.String)}.
-	 *
-	@Test
-	public void testMuestraSplit() {
-		fail("Not yet implemented");
-	}
+	}	
 
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#quitaEspacios(java.lang.String)}.
-	 *
+	 */
 	@Test
 	public void testQuitaEspacios() {
-		fail("Not yet implemented");
+		String c1="Asignatura entornos de programación";
+				
+		assertEquals(cad.quitaEspacios(c1),c1.trim());
 	}
 
 	/**
