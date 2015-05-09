@@ -4,11 +4,7 @@
 package unit9;
 
 import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -18,20 +14,7 @@ import org.junit.Test;
 public class CadenasAlumnoTest {
 
 	private CadenasAlumno cad;
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
+	
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -39,14 +22,7 @@ public class CadenasAlumnoTest {
 	public void setUp(){
 		cad=new CadenasAlumno();		
 	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@After
-	public void tearDown(){		
-	}
-
+	
 	/**
 	 * Test method for {@link unit9.CadenasAlumno#sonIguales(java.lang.String, java.lang.String)}.
 	 */
@@ -112,11 +88,7 @@ public class CadenasAlumnoTest {
 		String c1="AlBa";
 		String c2="alba";
 		String c3="cuen";
-		boolean iguales=false;
-		
-		if(c1.equalsIgnoreCase(c2))
-			iguales=true;
-		
+				
 		assertTrue(cad.comparaIgnorandoMayusculas(c1, c2));
 		assertFalse(cad.comparaIgnorandoMayusculas(c1,c3));
 		assertEquals(cad.comparaIgnorandoMayusculas(c1,c2),c1.equalsIgnoreCase(c2));
